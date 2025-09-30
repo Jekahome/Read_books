@@ -1,0 +1,23 @@
+[book]
+authors = ["Jeka"]
+language = "en"
+src = "src"
+title = "Computer Science Bookshelf"
+
+
+[output.html]
+smart-punctuation = false
+no-section-label = false
+ 
+
+[output.html.print]
+enable = false    
+page-break = false  
+
+[output.html.fold]
+enable = true    
+level = 0         
+
+[build]
+build-dir = "book"
+create-missing = true
