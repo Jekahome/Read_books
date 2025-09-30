@@ -1,0 +1,42 @@
+name: Update README with Bash
+
+on:
+  # Запускать по расписанию, раз в неделю ('0 4 * * 1')
+  schedule:
+    - cron: '*/5 * * * *'  
+  # Запускать вручную
+  workflow_dispatch:
+  # Запускать при изменении README
+  push:
+    branches:
+      - main
+    paths:
+      - 'README.md'
+      - '.github/workflows/update_readme.yml'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Make binaries executable
+        run: chmod +x ./update_timeline.sh
+      - name: Execute update_timeline.sh
+        run: ./update_timeline.sh
+      - name: Commit and Push Changes
+        run: |
+          git config user.name "CI Bot"
+          git config user.email "ci-bot@example.com"
+          git add .
+          git commit -m "Apply timeline changes from CI [skip ci]"
+          git push
+
+
+
+
+
+
+           
