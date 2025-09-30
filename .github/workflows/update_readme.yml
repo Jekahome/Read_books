@@ -3,7 +3,7 @@ name: Update README with Bash
 on:
   # Запускать по расписанию, раз в неделю ('0 4 * * 1')
   schedule:
-    - cron: '*/5 * * * *'  
+    - cron: '0 4 * * 1'  
   # Запускать вручную
   workflow_dispatch:
   # Запускать при изменении README

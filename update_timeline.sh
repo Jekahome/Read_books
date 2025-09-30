@@ -8,7 +8,7 @@ PERC_DIR="img/perc"
 PERC_SRC_DIR="src/img/perc"
 
 # Установите дату начала (Год-Месяц-День)
-START_DATE="2025-08-30"
+START_DATE="2025-09-30"
 
 # --- ФУНКЦИИ ---
 
