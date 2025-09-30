@@ -1,6 +1,6 @@
 # Summary
 
-[Introduction](Introduction.md)
+[Introduction](README.md)
 
 - [Бугаенко Егор]()
   - [Бугаенко Егор. Элегантные объекты. Java Edition 2018.pdf](conclusion_1.md)
